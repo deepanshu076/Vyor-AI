@@ -22,6 +22,7 @@ export function Navbar() {
         { name: "API Platform", href: "#api" },
         { name: "Documentation", href: "#docs" },
         { name: "About", href: "#about" },
+        { name: "Careers", href: "#careers" },
     ];
 
     return (
@@ -36,9 +37,15 @@ export function Navbar() {
             >
                 <Link href="/" className="flex items-center gap-4 group shrink-0">
                     <div className="relative w-10 h-10 rounded-xl bg-white overflow-hidden flex items-center justify-center p-1.5 shadow-xl group-hover:rotate-6 transition-transform">
-                        <img src="/LOGO.png" alt="VyorAI Logo" className="w-full h-full object-contain" />
+                        <img
+                            src="/LOGO.png"
+                            alt="VyorAI Logo"
+                            className="w-full h-full object-contain"
+                        />
                     </div>
-                    <span className="text-xl font-black tracking-tighter text-white">VyorAI</span>
+                    <span className="text-xl font-black tracking-tighter text-white">
+                        VyorAI
+                    </span>
                 </Link>
 
                 {/* Desktop Nav */}
@@ -94,8 +101,12 @@ export function Navbar() {
                             </Link>
                         ))}
                         <div className="grid grid-cols-2 gap-4 pt-8 border-t border-white/5">
-                            <button className="py-4 rounded-2xl bg-white/[0.05] border border-white/10 text-white font-black">Log In</button>
-                            <button className="py-4 rounded-2xl bg-white text-black font-black">Get Started</button>
+                            <button className="py-4 rounded-2xl bg-white/[0.05] border border-white/10 text-white font-black">
+                                Log In
+                            </button>
+                            <button className="py-4 rounded-2xl bg-white text-black font-black">
+                                Get Started
+                            </button>
                         </div>
                     </motion.div>
                 )}
